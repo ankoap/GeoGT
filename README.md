@@ -17,7 +17,34 @@ conda env create -f environment.yaml
 conda activate geogt
 ```
 
+## Datasets
+
+### official datasets 
+
+The official datasets can be found at [Molecule3D](https://github.com/divelab/MoleculeX/tree/molx/Molecule3D) and [Qm9](https://figshare.com/collections/Quantum_chemistry_structures_and_properties_of_134_kilo_molecules/978904).
+
+
 ## Experiments
+
+### Molecule Tokenization
+
+#### Mole-BERT Tokenizer Training
+
+```bash
+cd /path/to/GeoGT
+bash experiments/tokenizer_training/mol_bert_tokenizer_training.sh
+```
+
+#### Tokenize Molecules
+
+```bash
+cd /path/to/GeoGT   
+python -m tokenize_mole \
+    --save_dir /path/to/save/tokenized/dataset/ \
+    --dataset_name Molecule3D (or Qm9) \
+    --mode random (or scaffold) \
+    --tokenizer_checkpoint /path/to/tokenizer/checkpoint \
+```
 
 ### Molecular Ground-State Conformation Prediction
 
@@ -25,7 +52,7 @@ conda activate geogt
 
 ```bash
 cd /path/to/GeoGT  
-bash expriments/conformer_prediction/geogt_for_conformer_prediction.sh
+bash experiments/conformer_prediction/geogt_for_conformer_prediction.sh
 ```
 
 #### Evaluation
