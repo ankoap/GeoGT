@@ -19,10 +19,21 @@ conda activate geogt
 
 ## Datasets
 
-### official datasets 
+### Official Data
 
 The official datasets can be found at [Molecule3D](https://github.com/divelab/MoleculeX/tree/molx/Molecule3D) and [Qm9](https://figshare.com/collections/Quantum_chemistry_structures_and_properties_of_134_kilo_molecules/978904).
 
+### Preprocessed Data
+
+The preprocessed version of the original dataset is available on Hugging Face, including ["HFMolecule3D"](https://huggingface.co/datasets/RichXuOvO/HFMolecule3D) and ["HFQm9"](https://huggingface.co/datasets/RichXuOvO/HFQm9).
+
+### Tokenized Data
+
+The tokenized datasets are available on [Google Drive](https://drive.google.com/drive/folders/1ENnLjrk087aHzYRr3zg517Zx39CygPUL?usp=drive_link).
+
+### Evaluation Data
+
+The data used for evaluation is available on [Google Drive](https://drive.google.com/drive/folders/1qwOiaowRkRWVfQWIXQ7HP1i3qiL55l69?usp=drive_link).
 
 ## Experiments
 
